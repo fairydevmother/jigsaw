@@ -7,7 +7,9 @@ const Post = () => {
     return (
       <>
         <button onClick={() => setIsOpen(true)}>
-        <h1 className="text-black h-24 text-2xl title-font font-bold mb-2"></h1>
+        <h1 className="text-black h-24 text-2xl title-font font-bold mb-2">
+          Open
+        </h1>
         </button>
         {isOpen && (
 
@@ -41,12 +43,6 @@ const Post = () => {
                <p className="mb-3 text-xl font-light text-gray-500 dark:text-gray-400">    
                {post.content} </p>
 
-             <Link className="mt-3 text-indigo-500 inline-flex items-center" key={post.id} href="/[id]" as={`/${post.id}`}>
-                          Read More
-                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                                <path d="M5 12h14M12 5l7 7-7 7"></path>
-                            </svg>
-                         </Link>
               <div className='text-center'>
             
               <span className="inline-block h-1 w-10 rounded bg-pink-500 mt-8 mb-6"></span>

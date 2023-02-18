@@ -103,12 +103,15 @@ export default function Index() {
                               
                         </div>
                         <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-                        <Post key={post.id} post={post} />
+                        
                         
                         <h1 className="text-black h-24 text-2xl title-font font-bold mb-2">{post.title}</h1>
 
                             <p className="leading-relaxed text-base">{post.body} </p>
-                           
+                            <Link href='' >
+                        
+                            <Post key={post.id} post={post} />
+                            </Link>
                          
 
                         
