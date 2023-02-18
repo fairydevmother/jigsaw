@@ -1,22 +1,24 @@
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
-import Head from 'next/head'
-import Link from 'next/link'
-import Header from '../components/header'
+import Head from 'next/head';
+import Link from 'next/link';
+import Header from '../components/header';
 import Sidebar from '../components/sidebar';
-import Image from 'next/image'
-import data from '../data/data.json'
+import Image from 'next/image';
+import data from '../data/data.json';
 
 export default function Post(){ 
-
+  
   
   return (
+
     <div>
        {data.Posts.map(post => (
        post.id == id
       ? (<div key={post.id}>
         
         <div>
+        
       <Head>
         <title>Post | Blog</title>
         <link rel="icon" href="/puzzle.png" />
@@ -36,7 +38,7 @@ export default function Post(){
   
     <Header />
 
-    <main className="max-w-full h-full flex relative overflow-x-hidden ">
+    <main className="max-w-full h-full flex relative overflow-x-hidden">
 
       <div  className="h-full w-full m-4 flex flex-wrap items-start justify-start rounded-tl grid-flow-col auto-cols-max gap-4">
 
@@ -45,7 +47,7 @@ export default function Post(){
              <div   className=' mt-1 ml-28 p-5'>
               <div>
                 
-              <Image className='mx-auto py-10'  width={190} height={190} src={post.imgUrl} alt={post.title} />
+              <Image className='mx-auto py-10'  width={190} height={190} src='/cat.webp' alt='cat' />
               </div>
              <span className="ml-2 text-gray-500 text-sm">Jigsaw By S. KARACA</span> 
              <br></br>
@@ -63,7 +65,7 @@ export default function Post(){
         
         
                <p className="mb-3 text-xl font-light text-gray-500 dark:text-gray-400">    
-               {post.body}  </p>
+              {post.body}</p>
 
 
               <div className='text-center'>
@@ -96,27 +98,27 @@ export default function Post(){
 
 </div>
 
-<style jsx>{`
-      .popup-content {
-        height:37.8rem;
-        border-radius:2px;
-        transform: translate(-50%, -50%);
-        background-color:#F4F9F9;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        padding: 12px;
-        z-index: 1; 
-        color:black;
-        width:80.3rem;
-        
-    }
-    .container{
-       position:absolute;
-        top:7%;
-        left:12%;
-    }
-    .title{
-        font-size:1.50rem;
-    }
+<style>{`
+         .popup-content {
+          height:37.8rem;
+          border-radius:2px;
+          transform: translate(-50%, -50%);
+          background-color:#F4F9F9;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          padding: 12px;
+          z-index: 1; 
+          color:black;
+          width:80.3rem;
+          
+      }
+      .container{
+         position:absolute;
+          top:7%;
+          left:12%;
+      }
+      .title{
+          font-size:1.50rem;
+      }
     
       `}</style>
  
@@ -126,10 +128,7 @@ export default function Post(){
     </div>
          
          
-         
          </div>
-         
-         
          
          )
 
@@ -138,6 +137,10 @@ export default function Post(){
       : null
 
       ))}
+
+      
+
+    
     </div>
   );
  }

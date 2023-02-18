@@ -81,7 +81,7 @@ export default function Docs() {
 
 </div>
 
-<style jsx>{`
+<style>{`
         .bgColor{
           background-color:#7743DB;
           

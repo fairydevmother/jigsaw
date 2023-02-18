@@ -1,3 +1,4 @@
 {
+  "react/no-unknown-property": ['error', { ignore: ['css'] }],
   "extends": "next/core-web-vitals"
 }

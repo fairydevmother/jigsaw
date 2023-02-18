@@ -105,19 +105,13 @@ export default function Index() {
                         <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
                         <Post key={post.id} post={post} />
                         
-
+                        <h1 className="text-black h-24 text-2xl title-font font-bold mb-2">{post.title}</h1>
 
                             <p className="leading-relaxed text-base">{post.body} </p>
                            
                          
 
-                         <Link key={post.id} href="/[id]" as={`/${post.id}`} className="mt-3 text-indigo-500 inline-flex items-center">
-                          Read More
-                         
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                                <path d="M5 12h14M12 5l7 7-7 7"></path>
-                            </svg>
-                            </Link>
+                        
                         </div>
                         </div>
                     </div>
@@ -134,7 +128,7 @@ export default function Index() {
 </div>
 
 
-<style jsx>{`
+<style>{`
         .bgColor{
           background-color:#7743DB;
           

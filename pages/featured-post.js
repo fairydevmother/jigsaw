@@ -93,7 +93,7 @@ export default function Post(){
 
 </div>
 
-<style jsx>{`
+<style>{`
          .popup-content {
           height:37.8rem;
           border-radius:2px;

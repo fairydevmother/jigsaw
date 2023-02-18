@@ -7,7 +7,7 @@ const Post = () => {
     return (
       <>
         <button onClick={() => setIsOpen(true)}>
-        <h1 className="text-black h-24 text-2xl title-font font-bold mb-2"></h1>
+        <h1 className="text-black h-24 text-lg title-font font-bold mb-2">Read More</h1>
         </button>
         {isOpen && (
 
@@ -66,28 +66,26 @@ const Post = () => {
 
         
 <style jsx>{`
-      .popup-content {
-        height:37.8rem;
-        border-radius:2px;
-        position: fixed;
-        top: 55%;
-        left:51.8%;
-        transform: translate(-50%, -50%);
-        background-color:#F4F9F9;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        padding: 12px;
-        z-index: 1; 
-        color:black;
-        width:80.3rem;
-    }
-    .container{
-        position: fixed;
-        top: 4%;
-        left:12%;
-    }
-    .title{
-        font-size:1.50rem;
-    }
+        .popup-content {
+            height:37.8rem;
+            border-radius:2px;
+            transform: translate(-50%, -50%);
+            background-color:#F4F9F9;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px;
+            z-index: 1; 
+            color:black;
+            width:80.3rem;
+            
+        }
+        .container{
+           position:absolute;
+            top:7%;
+            left:12%;
+        }
+        .title{
+            font-size:1.50rem;
+        }
     
       `}</style>
       </>

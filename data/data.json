@@ -11,18 +11,22 @@
       "title": "Test Blog Post",
       "body": "This is a test blog post that is on the playground blog page",
       "id": "2d0eb78c-d671-4ce1-9137-a6379153f084",
-      "imgUrl": "/cat.webp"
+      "imgUrl": "/cat.webp",
+      "slug":"Test"
     },
     {
       "title": "Blog Post",
       "body": "This is another blog post on the playground page.",
       "id": "599695d0-bab8-463a-a381-3191cd0182ab",
-      "imgUrl": "/cat.webp"
+      "imgUrl": "/cat.webp",
+      "slug":"Test"
     },
     {
       "title": "Next Blog",
       "body": "Hello",
-      "id": "1988ac88-d8cc-477b-aa00-bf177d76d4e8"
+      "id": "1988ac88-d8cc-477b-aa00-bf177d76d4e8",
+      "imgUrl": "/cat.webp",
+      "slug":"Test"
     }
   ]
 }
