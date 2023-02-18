@@ -7,21 +7,12 @@ import Image from 'next/image'
 import { useState, useEffect } from 'react';
 
 export default function Docs() {
-  const [docs, setDocs] = useState([]);
-  const API_URL = process.env.API_URL || 'http://localhost:3000';
-  useEffect(() => {
-    fetch(`${API_URL}/api/docs`)
-      .then((res) => res.json())
-      .then((data) => setDocs(data));
-
-  }, []);  
-  
-  
+ 
   return (
       <div>
       <Head>
         <title>Docs | Blog</title>
-        <link rel="icon" href="/puzzle.png" />
+     
         <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
 
 

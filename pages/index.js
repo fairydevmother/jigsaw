@@ -10,21 +10,9 @@ import Sidebar from '../components/sidebar';
 import Post from '../components/postModel';
 import FeaturedPost from '../components/featuredPost';
 import Image from 'next/image'
+import data from '../data/data.json'
 
 export default function Index() {
-  const [posts, setPosts] = useState([]);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    axios.get('http://localhost:3000/api/posts')
-      .then(response => {
-        setPosts(response.data);
-      })
-      .catch(error => {
-        setError(error);
-      });
-  }, []);
-
   
   return ( 
      <div>
@@ -88,7 +76,7 @@ export default function Index() {
                             </div>
                               
                            
-                             <Link href="/featured-post" className="mt-3 text-indigo-500 inline-flex items-center">
+                             <Link href="/featured-post/"  className="mt-3 text-indigo-500 inline-flex items-center">
                                 Read More
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                                 <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -102,7 +90,7 @@ export default function Index() {
                 </section>
            
       </div>
-      {posts.map(post => (
+      {data.Posts.map(post =>
    
       <div key={post.id} className="w-96 rounded-lg flex-shrink-0 flex-grow essayColor">
              
@@ -111,7 +99,7 @@ export default function Index() {
                         <div className="p-5 bg-white flex items-center mx-auto border-b  border-gray-200 rounded-lg sm:flex-row flex-col">
                         <div className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center flex-shrink-0">
                             <Image width={288} height={96}
-                              src={post.imgUrl} alt={post.title}/>
+                              src="/cat.webp" alt={post.title}/>
                               
                         </div>
                         <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
@@ -119,7 +107,7 @@ export default function Index() {
                         
 
 
-                            <p className="leading-relaxed text-base">{posts.content} </p>
+                            <p className="leading-relaxed text-base">{post.body} </p>
                            
                          
 
@@ -136,7 +124,7 @@ export default function Index() {
                 </section>
 
       </div>
-       ))}
+      )}
   
     </div>
     

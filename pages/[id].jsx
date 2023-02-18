@@ -5,22 +5,14 @@ import Link from 'next/link'
 import Header from '../components/header'
 import Sidebar from '../components/sidebar';
 import Image from 'next/image'
+import data from '../data/data.json'
 
 export default function Post(){ 
-  const router = useRouter()
-  const API_URL = process.env.API_URL || 'http://localhost:3000';
-  const { id } = router.query
-  const [posts, setPosts] = useState([]);
-  useEffect(() => {
-    fetch(`${API_URL}/api/posts`)
-      .then((res) => res.json())
-      .then((data) => setPosts(data));
 
-  }, []);
   
   return (
     <div>
-       {posts.map((post) => (
+       {data.Posts.map(post => (
        post.id == id
       ? (<div key={post.id}>
         
@@ -71,7 +63,7 @@ export default function Post(){
         
         
                <p className="mb-3 text-xl font-light text-gray-500 dark:text-gray-400">    
-               {post.content}  </p>
+               {post.body}  </p>
 
 
               <div className='text-center'>
