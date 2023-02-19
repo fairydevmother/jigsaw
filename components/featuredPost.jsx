@@ -55,7 +55,7 @@ const FeaturedPost = () => {
                </svg>  Pandemic Developer </h1>
               
             
-               <h2 className="mb-3 text-xl font-bold text-gray-500 dark:text-gray-400">
+               <h2 className="mb-3  text-xl font-bold text-gray-500 dark:text-gray-400">
                Of course when I say “Pandemic” developer it is a reference to the time I started my journey to become a developer. It might feel like ages ago right now but there was a time we all caged up in our little -in some cases quite large- houses for quite a long time, and we couldn’t see the end of it. After some time -and I really want to believe this goes for everyone- we started looking inward and get to know ourselves and what we are meant to do. At least that is what happened to me.
 
                 </h2>
@@ -226,14 +226,14 @@ const FeaturedPost = () => {
           border-radius:2px;
           position: fixed;
           top: 56.2%;
-          left:56%;
+          left:58%;
           transform: translate(-50%, -50%);
           background-color:#F4F9F9;
           box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
           padding: 12px;
           z-index: 1; 
           color:black;
-          width:30rem;
+          width:27rem;
       }
       .popup-writer{
          margin-top:0.25rem;
@@ -249,11 +249,13 @@ const FeaturedPost = () => {
           left:2%;
       }
       .container{
-        width:85%
-          position: fixed;
-          top:50%;
-          left:10%;
-      }.date{
+        width:55%
+        position: fixed;
+        top:50%;
+        left:10%;
+        padding:0 1.25 0 2.25;
+      }
+      .date{
         margin-left:5.5rem;
       }.writer{
         margin-left:2.2rem;
