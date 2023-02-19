@@ -7,10 +7,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import Header from '../components/header'
 import Sidebar from '../components/sidebar';
-import Post from '../components/postModel';
-import FeaturedPost from '../components/featuredPost';
-import Image from 'next/image'
-import data from '../data/data.json'
+import data from '../data/data.json';
 
 export default function Index() {
 
@@ -35,99 +32,9 @@ export default function Index() {
     <Header />
 
     <main className=" font-mono max-w-full h-full flex relative overflow-y-hidden">
+    <h1>{data.Title}</h1>
+    <p>{data.Desc}</p>
 
-      <div className="h-full w-full m-4 flex flex-wrap items-start justify-start rounded-tl grid-flow-col auto-cols-max gap-4 overflow-y-scroll">
-
-       <div className="font-mono w-full h-95 rounded-lg flex-shrink-0 flex-grow essayColor">
-                <section className="h-85 text-gray-600 body-font">
-                    <div className="container px-5 py-5 mx-auto">
-                        <div className="p-5 bg-white flex items-center mx-auto border-b  border-gray-200 rounded-lg sm:flex-row flex-col">
-                        <div className="sm:w-46 sm:h-46 h-72 w-72 sm:mr-10 inline-flex items-center justify-center flex-shrink-0">
-                        <Image height={300} width={500} src="/cat.webp" alt="cat" />
-                        </div>
-                      
-                        <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-                          
-                            <Link href='' >
-                            <FeaturedPost />
-                            
-                            </Link>
-                            
-                            <p className="leading-relaxed text-base">Story of me getting into tech and programming. </p>
-                            
-                            <div className="md:flex font-bold text-gray-800">
-                                <div className="w-full md:w-1/2 flex space-x-3">
-                                    <div className="w-1/2">
-                                        <h2 className="text-gray-500">Tag</h2>
-                                        <p>technology</p>
-                                    </div>
-                                    <div className="w-1/2">
-                                        <h2 className="text-gray-500">Tag</h2>
-                                        <p>programming</p>
-                                    </div>
-                                </div>
-                                <div className="w-full md:w-1/2 flex space-x-3">
-                                    <div className="w-1/2">
-                                        <h2 className="text-gray-500">Tag</h2>
-                                        <p>learning</p>
-                                    </div>
-                                </div>
-    
-                            </div>
-                              
-                           
-                             <Link href="/featured-post/"  className="hover:text-blue-800 mt-3 text-indigo-500 inline-flex items-center">
-                                Read More
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                                <path d="M5 12h14M12 5l7 7-7 7"></path>
-                            </svg> </Link>
-                       
-     
-                           
-                        </div>
-                        </div>
-                    </div>
-                    
-                </section>
-          
-      </div>
-     
-      {data.Posts.map(post =>
-    
-      <div key={post.id} className="w-96 rounded-lg flex-shrink-0 flex-grow essayColor">
-         
-      <section className="text-gray-600 body-font">
-                    <div key={post.id} className="container px-5 py-5 mx-auto">
-                        <div className="p-5 bg-white flex items-center mx-auto border-b  border-gray-200 rounded-lg sm:flex-row flex-col">
-                        <div className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center flex-shrink-0">
-                            <Image width={222} height={92}
-                              src={post.imgUrl} alt={post.title}/>
-                              
-                        </div>
-                        <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-                        
-                        <Post key={post.id} post={post} />
-                       
-
-                            <p className="leading-relaxed text-base">{post.description} </p>
-                           
-                            <Link className="mt-3 text-indigo-500 inline-flex items-center hover:text-blue-800" href={`/article/${post.slug}`}>
-                          Read More
-                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                                <path d="M5 12h14M12 5l7 7-7 7"></path>
-                            </svg>
-                         </Link>
-
-                        
-                        </div>
-                        </div>
-                    </div>
-                </section>
-
-      </div>
-      )}
-  
-    </div>
     
   </main>
   
