@@ -240,7 +240,7 @@ const Post = ({post}) => {
     }
     
     }
-    @media screen and (max-width: 768px) {
+    @media(max-width: 768px) { 
       .popup-content {
         height:37.8rem;
         border-radius:2px;
@@ -253,29 +253,30 @@ const Post = ({post}) => {
         padding: 12px;
         z-index: 1; 
         color:black;
-        width:30rem;
+        width:27rem;
     }
     .popup-writer{
        margin-top:0.25rem;
        margin-left:5.3rem;
-       padding:1.25rem;
     }
     .popup-button{
-       display:none;
-    }
-    .popup-buttonTwo{
-      position: fixed;
-        top:2%;
-        left:2%;
-    }
+      display:none;
+   }
+   .popup-buttonTwo{
+     position: fixed;
+       top:2%;
+       left:2%;
+   }
     .container{
       width:85%
-        position: fixed;
-        top:50%;
-        left:10%;
-    }.date{
+      position: fixed;
+      top:50%;
+      left:12%;
+    }
+    .date{
       margin-left:5.5rem;
-    }.writer{
+    }
+    .writer{
       margin-left:2.2rem;
     }
     

@@ -127,6 +127,18 @@ export default function Post(){
 
      }
      @media (min-width: 768px) and (max-width: 1200px) {
+        .popup-content {
+        height:37.8rem;
+        border-radius:2px;
+        transform: translate(-50%, -50%);
+        background-color:#F4F9F9;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px;
+        z-index: 1; 
+        color:black;
+        width:45rem;
+        
+    }
       .container{
         position:absolute;
         top:70%;
@@ -151,6 +163,18 @@ export default function Post(){
       
  }
   @media screen and (max-width:768px){
+      .popup-content {
+        height:37.8rem;
+        border-radius:2px;
+        transform: translate(-50%, -50%);
+        background-color:#F4F9F9;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px;
+        z-index: 1; 
+        color:black;
+        width:27rem;
+        
+    }
     .container{
       position:absolute;
       top:70%;
@@ -172,10 +196,9 @@ export default function Post(){
 
      }
      .date{
-      margin-left:8.4rem;
-    }
-    .writer{
-      margin-left:5rem;
+      margin-left:5.5rem;
+    }.writer{
+      margin-left:2.2rem;
     }
   }
     

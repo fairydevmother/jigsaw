@@ -175,10 +175,9 @@ export default function Post({post}){
 
          }
          .date{
-          margin-left:8.4rem;
-        }
-        .writer{
-          margin-left:5rem;
+          margin-left:5.5rem;
+        }.writer{
+          margin-left:2.2rem;
         }
       }
       `}</style>
