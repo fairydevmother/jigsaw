@@ -34,7 +34,7 @@ export default function Index() {
   
     <Header />
 
-    <main className=" font-mono max-w-full h-full flex relative overflow-y-hidden">
+    <main className="display font-mono max-w-full h-full flex relative overflow-y-hidden">
 
       <div className="h-full w-full m-4 flex flex-wrap items-start justify-start rounded-tl grid-flow-col auto-cols-max gap-4 overflow-y-scroll">
 
@@ -136,6 +136,9 @@ export default function Index() {
 
 
 <style>{`
+
+    
+
         .bgColor{
           background-color:#7743DB;
           

@@ -56,7 +56,7 @@ const Sidebar = () => {
   
   return (
    <div>
-     <aside className="h-full w-16 flex flex-col space-y-10 items-center justify-center relative bgColor text-white">
+     <aside className="sidebar h-full  flex flex-col space-y-10 items-center justify-center relative bgColor text-white">
     {/* <Popover placement="right" title={text} content={content} trigger="click">
      <div  className="h-10 w-10 flex items-center justify-center rounded-lg cursor-pointer hover:text-gray-800 hover:bg-white  hover:duration-300 hover:ease-linear focus:bg-white">
        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" /></svg>
@@ -64,22 +64,22 @@ const Sidebar = () => {
      
    </Popover> */}
 
-    <div className="h-10 w-10 flex items-center justify-center rounded-lg cursor-pointer  hover:bg-purple-400  hover:duration-300 hover:ease-linear">
+    <div className="h-10  flex items-center justify-center rounded-lg cursor-pointer  hover:bg-purple-400  hover:duration-300 hover:ease-linear">
         <Link href='/'> <Image width={33} height={33} className="" src="/home.png" alt='home' /> </Link>
      </div>   
          
    
-     <div className="h-10 w-10 flex items-center justify-center rounded-lg cursor-pointer  hover:bg-purple-300 hover:duration-300 hover:ease-linear ">
+     <div className="h-10 flex items-center justify-center rounded-lg cursor-pointer  hover:bg-purple-300 hover:duration-300 hover:ease-linear ">
         <Link href='/ai-art'> 
         <Image width={30} height={30} className="" src="/love.png" alt='home' /> 
         </Link>
       </div>
 
-      <div className="h-10 w-10 flex items-center justify-center rounded-lg cursor-pointer hover:bg-purple-300  hover:duration-300 hover:ease-linear ">
+      <div className="h-10  flex items-center justify-center rounded-lg cursor-pointer hover:bg-purple-300  hover:duration-300 hover:ease-linear ">
            <Link target="_blank" href='https://spotifyanchor-web.app.link/e/C58uOT0plxb'> <Image width={30} height={30} className="fill-black" src="/mic.png" alt='home'  /> </Link>
      </div>
    
-     <div className="h-10 w-10 flex items-center justify-center rounded-lg cursor-pointer hover:bg-purple-300  hover:duration-300 hover:ease-linear ">
+     <div className="h-10  flex items-center justify-center rounded-lg cursor-pointer hover:bg-purple-300  hover:duration-300 hover:ease-linear ">
      <Link href='/quotes'> 
        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
@@ -91,6 +91,15 @@ const Sidebar = () => {
    </aside>
    
 <style jsx>{`
+  @media (min-width: 320px) and (max-width: 640px) {
+  
+  .sidebar{
+    width:2.2rem;
+  }  
+ }
+ .sidebar{
+  width:4.4rem;
+}  
         .bgColor{
           background-color:#7743DB;
           
