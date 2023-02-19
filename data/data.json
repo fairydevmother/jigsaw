@@ -8,32 +8,58 @@
   ],
   "Posts": [
     {
-      "title": "How Create Your First Next.js Application?",
+      "title": "How to Create Your First Next.js Application?",
       "description": "Creating a web application with next.js technology",
-      "preview":"Techies, buckle up your seat belts, because we're about to embark on a wild ride of creating a Next.js web application! But before we dive into the coding, let's talk about what exactly is Next.js and why it's the superhero of the web development world.",
+      "preview": "Techies, buckle up your seat belts, because we're about to embark on a wild ride of creating a Next.js web application! But before we dive into the coding, let's talk about what exactly is Next.js and why it's the superhero of the web development world.",
       "body": "Next.js is a React-based framework for building server-side rendered (SSR) and statically exported web applications. It's designed to make it easier for developers to create fast and efficient web applications, and it does so by handling a lot of the underlying complexities for you. \n So why do we use Next.js, you ask? Well, there are several reasons: \n 1) Server-side rendering: Next.js allows you to render your pages on the server, which means your pages load faster and have better SEO. This is especially important for sites with a lot of content that can take a while to load. \n 2) Easy-to-use: Next.js makes it easy for developers to create and deploy web applications. It has a great CLI tool that can help you get started quickly and it has a lot of built-in features that make your life as a developer easier. \n 3) Good for SEO: Next.js is designed with SEO in mind, which means it can help your site rank higher in search results. This is important for sites that rely on organic traffic. \n 4) Scalable: Next.js is designed to be scalable, which means you can use it to build large and complex web applications. It's also designed to be fast, which means your users won't have to wait for your site to load. \n Now that we've covered the basics of Next.js, let's dive into creating our Next.js web application! \n First of all, let's take a moment to celebrate the fact that you're now officially a full-stack developer (or in the process of becoming one). That's pretty impressive, and I'm sure you're already wearing a cape under your shirt (if not, I highly recommend it). \n Okay, now that we have that out of the way, let's get to the fun part. The first step in creating a Next.js web application is to get your hands on a computer that can handle all that coding power you're about to unleash. I recommend a computer with at least 16GB of RAM and a graphics card that's powerful enough to run the Matrix. \n Once you've got your computer all set up, it's time to install Node.js, which is the backbone of your Next.js application. Trust me, Node.js is like the Wonder Woman of JavaScript runtime environments. It's powerful, flexible, and always there when you need it. \n Next up, you'll need to install the Next.js CLI (Command Line Interface) tool, which will help you create your Next.js application with just a few simple commands. Think of the Next.js CLI tool as your personal butler who will do all the heavy lifting for you. \n Once you've got the Next.js CLI tool installed, it's time to create your first Next.js application. To do that, just open up your terminal and type the following command: \n | npx create-next-app my-awesome-app \n This will create a new Next.js application in a directory called 'my-awesome-app'. Now, use the following commands to navigate to that directory and start the development server: \n | cd my-awesome-app \n | npm run dev \n Okay, so now that we have a basic Next.js web application up and running, let's build a portfolio website to showcase all your amazing projects! But before we get started, let's take a moment to do a little victory dance. You've officially created your first Next.js web application! Go ahead and do a little moonwalk or a robot dance, I'll wait... \n  Alright, let's get back to business. The first thing we need to do is create some components that we can use to build our portfolio website. Components are reusable pieces of code that you can use to build your website. They're like lego blocks, but instead of building a castle, you're building a website! \n In Next.js, components are stored in the 'components' directory. To create a new component, just create a new file in that directory. For example, let's create a component called 'Header'. \n// components/Header.js \n  import React from 'react'\n const Header = () => { \n return ( \n <header> \n <h1>My Portfolio</h1> \n </header> \n )} \n export default Header \n In this example, we're importing React and creating a header component that simply displays a header with the text 'My Portfolio'. \n  Now that you've created your header component, let's move on to creating pages. Pages are the individual pages of your website, and they're what your users will actually see when they visit your site. \n To create a page in Next.js, you can create a new file in the pages directory with a .js extension. Let's create a home page for your portfolio website. \n // pages/index.js \n import React from 'react'; \n import Header from '../components/Header'; \n const Home = () => ( \n <div> \n <Header /> \n <p>Welcome to my portfolio!</p> \n </div> \n ); \n export default Home; \n \n Awesome! Now that you've got your Next.js web application up and running, it's time to start building your portfolio website! \n First of all, let's talk about components in Next.js. Components are the building blocks of your web application, and they're essentially small, reusable pieces of code that you can use to create your pages. Think of components like lego blocks - they're small, but when you put them together, they can create something amazing! \n To create a component in Next.js, you can create a new file in the components directory with a .js extension. Let's create a header component for your portfolio website. \n  // components/Header.js \n import React from 'react'; \n const Header = () => ( \n    <header> \n     <h1>My Portfolio</h1> \n  </header> \n ); \n export default Header; \n In this example, we're importing React and creating a header component that simply displays a header with the text 'My Portfolio'. \n Now that you've created your header component, let's move on to creating pages. Pages are the individual pages of your website, and they're what your users will actually see when they visit your site. \n To create a page in Next.js, you can create a new file in the pages directory with a .js extension. Let's create a home page for your portfolio website. \n // pages/index.js \n import React from 'react'; \n import Header from '../components/Header'; \n const Home = () => ( \n  <div> \n   <Header /> \n  <p>Welcome to my portfolio!</p> \n  </div> \n ); \n  export default Home; \n In this example, we're importing React and our header component, and creating a home page that displays the header and a simple welcome message. \n Now that you've got your header component and home page set up, you can start building the rest of your portfolio website. You can create additional components for things like your portfolio projects, your resume, and your contact information. You can also create additional pages for different sections of your site, like your portfolio, your resume, and your contact page. \n And that's it! You now have all the knowledge you need to create a beautiful portfolio website using Next.js. So get out there and start coding! Who knows, you might just become the next big thing in the web development world. ",
       "id": "2d0eb78c-d671-4ce1-9137-a6379153f084",
       "imgUrl": "/heart.png",
-      "slug":"how-to-create-nextjs-app",
-      "publishedAt":"Feb 13,2023"
+      "slug": "how-to-create-nextjs-app",
+      "publishedAt": "Feb 13,2023"
     },
     {
       "title": "Blog Post",
-      "preview":"This is entry to text",
+      "preview": "This is entry to text",
       "body": "This is another blog post on the playground page.",
       "id": "599695d0-bab8-463a-a381-3191cd0182ab",
       "imgUrl": "/cat.webp",
-      "slug":"Test",
-      "publishedAt":"Feb 13,2023"
+      "slug": "Test",
+      "publishedAt": "Feb 13,2023"
     },
     {
       "title": "Next Blog",
-      "preview":"This is entry to text",
+      "preview": "This is entry to text",
       "body": "Hello",
       "id": "1988ac88-d8cc-477b-aa00-bf177d76d4e8",
       "imgUrl": "/cat.webp",
-      "slug":"Test",
-      "publishedAt":"13 February 2023"
+      "slug": "Test",
+      "publishedAt": "13 February 2023"
+    }
+  ],
+  "AI": [
+    {
+      "description": "AI generated art",
+      "id": "2d0eb78c-d671-4ce1-9137-a6879153f084",
+      "imgUrl": "/AI/dall-e.png",
+      "copyright":"https://openai.com/dall-e-2/"
+    },
+    {
+      "description": "AI generated art",
+      "id": "2d0eb78c-d671-4ce1-9137-a5879153f084",
+      "imgUrl": "/AI/dall-eTwo.png",
+      "copyright":"https://openai.com/dall-e-2/"
+    },
+    {
+      "description": "AI generated art",
+      "id": "2d0eb78c-d671-4ce1-9137-a6379153f084",
+      "imgUrl": "/AI/dall-eThree.png",
+      "copyright":"https://openai.com/dall-e-2/"
+    },
+    {
+      "description": "LOL pictures",
+      "id": "da50bbe8-c4c4-4ac1-bee3-e73a5c28cf05",
+      "imgUrl": "/AI/dall-eFour.png",
+      "copyright":"https://openai.com/dall-e-2/"
     }
   ]
 }

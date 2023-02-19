@@ -41,14 +41,14 @@ export default function Post(){
 
       <section className="text-gray-600 body-font ">
             
-             <div   className=' mt-1 ml-28 p-5'>
+             <div   className='popup-writer mt-1 ml-28 p-5'>
               <div>
                 
               <Image className='mx-auto py-10'  width={250} height={200} src='/cat.webp' alt='cat' />
               </div>
-             <span className="ml-10 text-gray-500 text-sm">Jigsaw By S. KARACA</span> 
+             <span className="writer text-gray-500 text-sm">Jigsaw By S. KARACA</span> 
              <br></br>
-             <span className="ml-16 text-gray-500 text-sm">July 4, 2022</span>
+             <span className="date ml-16 text-gray-500 text-sm">July 4, 2022</span>
 
              </div>
              
@@ -99,26 +99,85 @@ export default function Post(){
 </div>
 
 <style>{`
-         .popup-content {
-          height:37.8rem;
-          border-radius:2px;
-          transform: translate(-50%, -50%);
-          background-color:#F4F9F9;
-          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-          padding: 12px;
-          z-index: 1; 
-          color:black;
-          width:80.3rem;
-          
-      }
+    @media screen and (min-width:1200px){
+      .popup-content {
+        height:37.8rem;
+        border-radius:2px;
+        transform: translate(-50%, -50%);
+        background-color:#F4F9F9;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px;
+        z-index: 1; 
+        color:black;
+        width:80.3rem;
+        
+    }
+    .container{
+       position:absolute;
+        top:7%;
+        left:12%;
+    }
+    .title{
+        font-size:1.50rem;
+    }.popup-writer{
+      margin-top:0.25rem;
+      margin-left:7rem;
+      padding:1.25rem;
+    }
+
+     }
+     @media (min-width: 768px) and (max-width: 1200px) {
       .container{
-         position:absolute;
-          top:7%;
-          left:12%;
+        position:absolute;
+        top:70%;
+        width:55%
+        left:25%;
+        padding : 0 2rem 0 2rem
       }
       .title{
-          font-size:1.50rem;
+        padding:0
+      }.popup-writer{
+        margin-top:3rem;
+        margin-left:11rem;
+       
+
+       }
+       .date{
+        margin-left:18.4rem;
       }
+      .writer{
+        margin-left:15.1rem;
+      }
+      
+ }
+  @media screen and (max-width:768px){
+    .container{
+      position:absolute;
+      top:70%;
+      width:55%
+      left:12%;
+      padding : 0 2rem 0 2rem
+    }
+    .title{
+      padding:0
+    }.popup-writer{
+      margin-top:0.25rem;
+      margin-left:7rem;
+     
+
+     }.popup-writer{
+      margin-top:3rem;
+      margin-left:5rem;
+     
+
+     }
+     .date{
+      margin-left:8.4rem;
+    }
+    .writer{
+      margin-left:5rem;
+    }
+  }
     
       `}</style>
  

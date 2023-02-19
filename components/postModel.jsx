@@ -34,17 +34,21 @@ const Post = ({post}) => {
   
           <div className="popup-content max-w-full bg-blue-400  flex relative  overflow-x-hidden">
             
-            <section className="text-gray-600 body-font ">
-            <button onClick={() => setIsOpen(false)}>
+            <section className="text-gray-600 body-font items-center">
+            <button className='popup-button' onClick={() => setIsOpen(false)}>
             <Image  width={35} height={35}  src={closeButton} alt="src" />
              </button>
-             <div className=' mt-1 ml-28 p-5 '>
+
+             <button className='popup-buttonTwo' onClick={() => setIsOpen(false)}>
+            <Image  width={35} height={35}  src={closeButton} alt="src" />
+             </button>
+             <div className='popup-writer'>
               <div>
               <Image className='mb-5 pt-2'  width={200} height={170} src={post.imgUrl} alt="cat" />
               </div>
-             <span className=" ml-8 text-gray-500 text-sm">Jigsaw By S. KARACA</span> 
+             <span className="writer text-gray-500 text-sm">Jigsaw By S. KARACA</span> 
              <br></br>
-             <span className="ml-14 text-gray-500 text-sm"> Jun 12, 2022</span>
+             <span className="date  text-gray-500 text-sm"> Jun 12, 2022</span>
 
              </div>
              
@@ -83,20 +87,29 @@ const Post = ({post}) => {
            </div>
           
            
-          </section>
+            </section>
              
            
-          </div>
+          </div>  
+
+
+
+
+ 
         )}
+  
+
     
 
         
 <style jsx>{`
+    @media screen and (min-width:1300px){
       .popup-content {
+
         height:37.8rem;
         border-radius:2px;
         position: fixed;
-        top: 55%;
+        top: 60%;
         left:51.8%;
         transform: translate(-50%, -50%);
         background-color:#F4F9F9;
@@ -105,7 +118,14 @@ const Post = ({post}) => {
         z-index: 1; 
         color:black;
         width:80.3rem;
+
     }
+    .date{
+      margin-left:3.5rem;
+    }
+    .popup-buttonTwo{display:none;}
+    
+   
     .container{
         position: fixed;
         top: 4%;
@@ -114,10 +134,157 @@ const Post = ({post}) => {
     .title{
         font-size:1.50rem;
     }
+    .popup-writer{
+      margin-top:0.25rem;
+      margin-left:7rem;
+      padding:1.25rem;
+   }
+    .popup-img{
+      margin-bottom:5rem;
+      padding-top:2px;
+    }
+    .writer{
+     
+      margin-left:2rem;
+    }
+    .title{
+      font-size:1.50rem;
+  }
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1300px) {
+      .popup-content {
+
+        height:37.8rem;
+        border-radius:2px;
+        position: fixed;
+        top: 55%;
+        left:52.8%;
+        transform: translate(-50%, -50%);
+        background-color:#F4F9F9;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px;
+        z-index: 1; 
+        color:black;
+        width:55.3rem;
+
+    }
+    .date{
+      margin-left:3.5rem;
+    }
+    .popup-buttonTwo{display:none;}
     
+   
+    .container{
+        position: fixed;
+        top: 55%;
+        left:2%;
+    }
+    .title{
+        font-size:1.50rem;
+    }
+    .popup-writer{
+      margin-top:0.25rem;
+      margin-left:19rem;
+      padding:1.25rem;
+   }
+    .popup-img{
+      margin-bottom:5rem;
+      padding-top:2px;
+    }
+    .writer{
+     
+      margin-left:2rem;
+    }
+    }
+    @media (min-width: 767px) and (max-width: 1024px) {
+
+      .popup-content {
+        height:37.8rem;
+        border-radius:2px;
+        position: fixed;
+        top: 56.2%;
+        left:55%;
+        transform: translate(-50%, -50%);
+        background-color:#F4F9F9;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px;
+        z-index: 1; 
+        color:black;
+        width:45rem;
+    }
+    .title{
+      font-size:1.50rem;
+  }
+    .popup-writer{
+      margin-top:0.25rem;
+      margin-left:9rem;
+      padding:1.25rem;
+   }
+    .popup-button{
+       display:none;
+    }
+    .popup-buttonTwo{
+      position: fixed;
+        top:2%;
+        left:2%;
+    }
+    .container{
+      width:70%
+        position: fixed;
+        top:50%;
+        left:1%;
+    }.date{
+      margin-left:15.5rem;
+    }.writer{
+      margin-left:12rem;
+    }
+    
+    }
+    @media screen and (max-width: 768px) {
+      .popup-content {
+        height:37.8rem;
+        border-radius:2px;
+        position: fixed;
+        top: 56.2%;
+        left:56%;
+        transform: translate(-50%, -50%);
+        background-color:#F4F9F9;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px;
+        z-index: 1; 
+        color:black;
+        width:30rem;
+    }
+    .popup-writer{
+       margin-top:0.25rem;
+       margin-left:5.3rem;
+       padding:1.25rem;
+    }
+    .popup-button{
+       display:none;
+    }
+    .popup-buttonTwo{
+      position: fixed;
+        top:2%;
+        left:2%;
+    }
+    .container{
+      width:85%
+        position: fixed;
+        top:50%;
+        left:10%;
+    }.date{
+      margin-left:5.5rem;
+    }.writer{
+      margin-left:2.2rem;
+    }
+    
+    }
       `}</style>
       </>
     );
+
+
 }
 
 export default Post;

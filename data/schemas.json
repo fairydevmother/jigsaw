@@ -1,7 +1,19 @@
 {
   "Posts": {
     "title": "text",
-    "body": "textarea"
+    "preview": "textarea",
+    "body": "textarea",
+    "id":"integer",
+    "imgUrl":"text",
+    "slug":"text",
+    "publishedAt":"date"
+  },
+  "AI": {
+    "description": "text",
+    "id": "integer",
+    "imgUrl":"text",
+    "copyright":"url"
+  
   }
  
 }

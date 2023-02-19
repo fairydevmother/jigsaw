@@ -8,7 +8,7 @@ import axios from 'axios';
 import Header from '../components/header'
 import Sidebar from '../components/sidebar';
 import data from '../data/data.json';
-
+import Image from 'next/image'
 export default function Index() {
 
   return ( 
@@ -31,9 +31,33 @@ export default function Index() {
   
     <Header />
 
-    <main className=" font-mono max-w-full h-full flex relative overflow-y-hidden">
-    <h1>{data.Title}</h1>
-    <p>{data.Desc}</p>
+    <main className=" font-mono max-w-95 h-full flex relative overflow-y-hidden">
+    
+    <div className="h-full w-full max-w-fit m-4 flex flex-wrap items-start justify-start rounded-tl grid-flow-col auto-cols-max gap-4 overflow-y-scroll">
+
+    {data.AI.map(art =>
+    
+    <div key={art.id} className=" rounded-lg flex-shrink-0 essayColor">
+      
+    <section className="text-gray-600 body-font">
+                  <div key={art.id} className=" px-5 py-5 mx-auto">
+                      <div className="p-5 bg-white flex items-center mx-auto border-b  border-gray-200 rounded-lg sm:flex-row flex-col">
+                      <Link target="_blank" href={art.copyright}>
+                      <div className="sm:w-45 sm:h-45 sm:mr-10 inline-flex items-center justify-center flex-shrink-0">
+                          <Image width={338} height={190}
+                            src={art.imgUrl} alt={art.description}/>
+                            
+                      </div>
+                        </Link>
+                      </div>
+                  </div>
+      </section>
+
+    </div>
+    )}
+    
+
+ </div>
 
     
   </main>

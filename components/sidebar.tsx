@@ -70,7 +70,7 @@ const Sidebar = () => {
          
    
      <div className="h-10 w-10 flex items-center justify-center rounded-lg cursor-pointer  hover:bg-purple-300 hover:duration-300 hover:ease-linear ">
-        <Link href='/docs'> 
+        <Link href='/ai-art'> 
         <Image width={30} height={30} className="" src="/love.png" alt='home' /> 
         </Link>
       </div>

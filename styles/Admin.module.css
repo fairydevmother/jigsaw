@@ -88,6 +88,7 @@
   border: solid rgb(240, 240, 240) 1px;
   padding: 10px;
   font-size: 15px;
+  color: black;
   font-family: 'Open Sans', 'Avenir Book', sans-serif;
   border-radius: 5px;
   outline: none;
@@ -98,7 +99,8 @@
 
 .formControl>input:focus, .formControl>textarea:focus {
   border: solid rgb(0, 125, 255) 1px;
-  box-shadow: 0 0 0 2px rgba(0, 125, 255, 0.25)
+  box-shadow: 0 0 0 2px rgba(127, 177, 231, 0.25);
+  color:black;
 }
 
 .formLabel {
@@ -121,7 +123,7 @@
 }
 
 .submit:hover, .formControl>select:hover {
-  background: rgb(0, 50, 125);
+  background: rgb(78, 149, 255);
   cursor: pointer;
 }
 
@@ -136,7 +138,7 @@
 .dbrow {
   width: 100%;
   margin: 10px 0;
-  background: white;
+  background: rgb(154, 78, 208);
   border-radius: 5px;
   padding: 10px;
   font-size: 16px;
@@ -157,7 +159,7 @@
 
 .viewbtn {
   float: right;
-  background: rgb(0, 75, 150);
+  background: rgb(64, 208, 237);
   padding: 7.5px 15px;
   border: none;
   border-radius: 2px;
@@ -168,7 +170,7 @@
 
 .delbtn {
   float: right;
-  background: rgb(200, 0, 75);
+  background: rgb(240, 135, 79);
   padding: 7.5px 15px;
   border: none;
   border-radius: 2px;
@@ -184,13 +186,14 @@
 
 .modalField {
   font-weight: bold;
+  color: black;
   display: inline-block;
   font-family: 'Open Sans', 'Avenir Book', sans-serif;
 }
 
 .modalValue {
   display: inline-block;
-  background: rgb(240, 240, 240);
+  background: rgb(220, 106, 106);
   padding: 2px;
   font-family: 'Monaco', monospace;
   font-size: 13px;
