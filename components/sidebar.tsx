@@ -94,12 +94,27 @@ const Sidebar = () => {
   @media (min-width: 320px) and (max-width: 640px) {
   
   .sidebar{
-    width:2.2rem;
+    width:2.5rem;
   }  
  }
- .sidebar{
-  width:4.4rem;
-}  
+ @media (min-width: 640px) and (max-width: 768px) {
+  
+  .sidebar{
+    width:3.5rem;
+  }  
+ }
+ @media (min-width: 768px) and (max-width: 1024px) {
+  
+  .sidebar{
+    width:4.3rem;
+  }  
+ }
+ @media (min-width: 1024px) {
+  
+  .sidebar{
+    width:4.5rem;
+  }  
+ }
         .bgColor{
           background-color:#7743DB;
           
