@@ -222,7 +222,7 @@ const FeaturedPost = () => {
       }
       @media screen and (max-width: 768px) {
         .popup-content {
-          height:37.8rem;
+          height:39em;
           border-radius:2px;
           position: fixed;
           top: 56.2%;

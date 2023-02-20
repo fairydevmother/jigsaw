@@ -242,7 +242,7 @@ const Post = ({post}) => {
     }
     @media(max-width: 768px) { 
       .popup-content {
-        height:37.8rem;
+        height:39rem;
         border-radius:2px;
         position: fixed;
         top: 56.2%;
