@@ -233,7 +233,7 @@ const FeaturedPost = () => {
           padding: 12px;
           z-index: 1; 
           color:black;
-          width:27rem;
+          width:24rem;
       }
       .popup-writer{
          margin-top:0.25rem;

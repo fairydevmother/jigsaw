@@ -246,14 +246,14 @@ const Post = ({post}) => {
         border-radius:2px;
         position: fixed;
         top: 56.2%;
-        left:56%;
+        left:63%;
         transform: translate(-50%, -50%);
         background-color:#F4F9F9;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         padding: 12px;
         z-index: 1; 
         color:black;
-        width:27rem;
+        width:24rem;
     }
     .popup-writer{
        margin-top:0.25rem;
