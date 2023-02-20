@@ -141,6 +141,9 @@ export default function Index() {
         .display{
           width:97%;
         }
+        .content{
+          width:97%;
+        }
         .container{
           width:97%;
         }

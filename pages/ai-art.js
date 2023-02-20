@@ -33,18 +33,18 @@ export default function Index() {
 
     <main className="display font-mono max-w-95 h-full flex relative overflow-y-hidden">
     
-    <div className="h-full w-full max-w-fit m-4 flex flex-wrap items-start justify-start rounded-tl grid-flow-col auto-cols-max gap-4 overflow-y-scroll">
+    <div className="h-full w-full max-w-fit m-4 flex flex-wrap items-start overflow-y-scroll overflow-x-hidden justify-start rounded-tl grid-flow-col auto-cols-max gap-4 ">
 
     {data.AI.map(art =>
     
-    <div key={art.id} className=" rounded-lg flex-shrink-0 essayColor">
+    <div key={art.id} className=" rounded-lg flex-shrink-0 essayColor ">
       
     <section className="text-gray-600 body-font">
-                  <div key={art.id} className=" px-5 py-5 mx-auto">
-                      <div className="p-5 bg-white flex items-center mx-auto border-b  border-gray-200 rounded-lg sm:flex-row flex-col">
+                  <div key={art.id} className="container px-5 py-5 mx-auto">
+                      <div className="p-3 bg-white flex items-center mx-auto border-b  border-gray-200 rounded-lg sm:flex-row flex-col">
                       <Link target="_blank" href={art.copyright}>
-                      <div className="sm:w-45 sm:h-45 sm:mr-10 inline-flex items-center justify-center flex-shrink-0">
-                          <Image width={338} height={190}
+                      <div className="sm:w-45 sm:h-45   sm:mr-10 inline-flex items-center justify-center flex-shrink-0">
+                          <Image width={333} height={190}
                             src={art.imgUrl} alt={art.description}/>
                             
                       </div>
