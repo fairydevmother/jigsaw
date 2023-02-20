@@ -70,7 +70,7 @@ export default function Index() {
        @media screen and (max-width: 768px) {
        
         .container{
-          width:97%;
+          width:95%;
         }
        }
 
