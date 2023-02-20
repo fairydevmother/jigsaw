@@ -209,7 +209,7 @@ const FeaturedPost = () => {
           left:2%;
       }
       .container{
-        width:70%
+        width:60%
           position: fixed;
           top:50%;
           left:1%;

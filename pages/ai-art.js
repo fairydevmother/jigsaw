@@ -39,8 +39,8 @@ export default function Index() {
     
     <div key={art.id} className=" rounded-lg flex-shrink-0 essayColor ">
       
-    <section className="text-gray-600 body-font">
-                  <div key={art.id} className="container px-5 py-5 mx-auto">
+    <section className="text-gray-600 body-font container ">
+                  <div key={art.id} className=" px-5 py-5 mx-auto">
                       <div className="p-3 bg-white flex items-center mx-auto border-b  border-gray-200 rounded-lg sm:flex-row flex-col">
                       <Link target="_blank" href={art.copyright}>
                       <div className="sm:w-45 sm:h-45   sm:mr-10 inline-flex items-center justify-center flex-shrink-0">
@@ -67,6 +67,12 @@ export default function Index() {
 
 
 <style>{`
+       @media screen and (max-width: 768px) {
+       
+        .container{
+          width:97%;
+        }
+       }
 
 
         .bgColor{
