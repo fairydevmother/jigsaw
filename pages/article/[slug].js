@@ -41,7 +41,7 @@ export default function Post({post}){
 
       <div  className="h-full w-full m-4 flex flex-wrap items-start justify-start rounded-tl grid-flow-col auto-cols-max gap-4">
 
-      <section className="text-gray-600 body-font ">
+      <section className=" text-gray-600 body-font ">
             
              <div   className='popup-writer'>
               <div>
@@ -62,12 +62,12 @@ export default function Post({post}){
                </svg>  {post.title}</h1>
               
         
-               <h2 className="mb-3 text-xl font-bold text-gray-500 dark:text-gray-800">
+               <h2 className="mb-3 preview font-bold text-gray-500 dark:text-gray-800">
                 {post.preview}
                </h2>
                  
                {paragraphs.map((p, i) => (
-                  <ReactMarkdown className="mb-3 text-lg font-light text-gray-500 dark:text-gray-500" key={i}>{p}</ReactMarkdown>
+                  <ReactMarkdown className="content mb-3  font-light text-gray-500 dark:text-gray-500" key={i}>{p}</ReactMarkdown>
                      ))}
 
               <div className='text-center'>
@@ -131,11 +131,12 @@ export default function Post({post}){
           margin-left:8rem;
         }
         
-    .svg{
-      width:2rem;
-      height:2rem;
-     }
+       .svg{
+         width:2rem;
+          height:2rem;
          }
+         
+        }
          @media (min-width: 768px) and (max-width: 1200px) {
           .container{
             position:absolute;
@@ -185,6 +186,12 @@ export default function Post({post}){
           margin-left:5.5rem;
         }.writer{
           margin-left:2.2rem;
+        }
+        .content{
+          font-size:15px;
+        }
+        .preview{
+          font-size:16px;
         }
       }
       `}</style>

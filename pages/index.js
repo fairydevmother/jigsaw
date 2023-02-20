@@ -38,7 +38,7 @@ export default function Index() {
 
       <div className="content h-full w-full  flex flex-wrap items-start justify-start rounded-tl grid-flow-col auto-cols-max gap-4 overflow-y-scroll overflow-x-hidden">
 
-       <div className="font-mono w-full h-95 rounded-lg flex-shrink-0 flex-grow essayColor">
+       <div className="post font-mono w-full h-95 rounded-lg flex-shrink-0 flex-grow essayColor">
                 <section className="h-85 text-gray-600 body-font container ">
                     <div className=" px-5 py-5 mx-auto">
                         <div className="p-5 bg-white flex items-center mx-auto border-b  border-gray-200 rounded-lg sm:flex-row flex-col">
@@ -91,8 +91,62 @@ export default function Index() {
                 </section>
           
       </div>
- 
+     
+      <div className="mobileTitle font-mono w-full h-95 rounded-lg flex-shrink-0 flex-grow essayColor">
+                <section className="h-85 text-gray-600 body-font container ">
+                    <div className=" px-5 py-5 mx-auto">
+                        <div className="p-5 bg-white flex items-center mx-auto border-b  border-gray-200 rounded-lg sm:flex-row flex-col">
+                        <div className="sm:w-46 sm:h-46 h-72 w-72 sm:mr-10 inline-flex items-center justify-center flex-shrink-0">
+                        <Image height={300} width={500} src="/cat.webp" alt="cat" />
+                        </div>
+                      
+                        <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                  
+                            <Link href="/featured-post/" className="font-mono text-black text-4xl title-font font-bold mb-2 hover:text-purple-300 mt-3 inline-flex items-center">
+                               Pandemic Developer
+                             </Link>
+                                                 
+  
 
+                            <p className="leading-relaxed text-base">Story of me getting into tech and programming. </p>
+                            
+                            <div className="md:flex font-bold text-gray-800">
+                                <div className="w-full md:w-1/2 flex space-x-3">
+                                    <div className="w-1/2">
+                                        <h2 className="text-gray-500">Tag</h2>
+                                        <p>technology</p>
+                                    </div>
+                                    <div className="w-1/2">
+                                        <h2 className="text-gray-500">Tag</h2>
+                                        <p>programming</p>
+                                    </div>
+                                </div>
+                                <div className="w-full md:w-1/2 flex space-x-3">
+                                    <div className="w-1/2">
+                                        <h2 className="text-gray-500">Tag</h2>
+                                        <p>learning</p>
+                                    </div>
+                                </div>
+    
+                            </div>
+                              
+                           
+                             <Link href="/featured-post/"  className="hover:text-blue-800 mt-3 text-indigo-500 inline-flex items-center">
+                                Read More
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg> </Link>
+                       
+     
+                           
+                        </div>
+                        </div>
+                    </div>
+                    
+                </section>
+          
+      </div>
+  
       {data.Posts.map(post =>
     
     <div  key={post.id} className="post w-96   rounded-lg flex-shrink-0 flex-grow essayColor">
@@ -100,14 +154,14 @@ export default function Index() {
     <section className="container text-gray-600 body-font">
                   <div key={post.id} className=" px-5 py-5 mx-auto">
                       <div className="p-5 bg-white flex items-center mx-auto border-b  border-gray-200 rounded-lg sm:flex-row flex-col">
-                      <div className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center flex-shrink-0">
+                      <div className="sm:w-32 sm:h-32 md:w-20 h-20 w-20 sm:mr-10 inline-flex items-center justify-center flex-shrink-0">
                           <Image width={222} height={92}
                             src={post.imgUrl} alt={post.title}/>
                             
                       </div>
                       <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
                       
-                      <Post className="post" key={post.id} post={post} />
+                      <Post  key={post.id} post={post} />
                       
 
                           <p className="leading-relaxed text-base">{post.description} </p>
