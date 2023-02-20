@@ -28,6 +28,8 @@ const Post = ({post}) => {
          {post.title}
         </h1>
         </button>
+
+        
         {isOpen && (
 
 

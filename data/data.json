@@ -56,9 +56,39 @@
       "copyright":"https://openai.com/dall-e-2/"
     },
     {
-      "description": "LOL pictures",
+      "description": "AI generated art",
       "id": "da50bbe8-c4c4-4ac1-bee3-e73a5c28cf05",
       "imgUrl": "/AI/dall-eFour.png",
+      "copyright":"https://openai.com/dall-e-2/"
+    },
+    {
+      "description": "AI generated art",
+      "id": "da50bbe8-c4c4-4ac1-fgd23-e73a5c28cf05",
+      "imgUrl": "/AI/dall-eFive.png",
+      "copyright":"https://openai.com/dall-e-2/"
+    },
+    {
+      "description": "AI generated art",
+      "id": "da50bbe8-c4c4-ddf1-fgd23-e73a5c28cf05",
+      "imgUrl": "/AI/dall-eSix.png",
+      "copyright":"https://openai.com/dall-e-2/"
+    },
+    {
+      "description": "AI generated art",
+      "id": "da50bbe8-c4c4-4af1-fgd23-e73a5c28cf05",
+      "imgUrl": "/AI/dall-eSeven.png",
+      "copyright":"https://openai.com/dall-e-2/"
+    },
+    {
+      "description": "AI generated art",
+      "id": "da50bfg8-c4c4-4af1-fgd23-e73a5c28cf05",
+      "imgUrl": "/AI/dall-eEight.png",
+      "copyright":"https://openai.com/dall-e-2/"
+    },
+    {
+      "description": "AI generated art",
+      "id": "da45bbe8-c4c4-4af1-fgd23-e73a5c28cf05",
+      "imgUrl": "/AI/dall-eNine.png",
       "copyright":"https://openai.com/dall-e-2/"
     }
   ]
