@@ -103,7 +103,7 @@ const FeaturedPost = () => {
           padding: 12px;
           z-index: 1; 
           color:black;
-          width:80.3rem;
+          width:76.3rem;
   
       }
       .date{
@@ -222,10 +222,10 @@ const FeaturedPost = () => {
       }
       @media screen and (max-width: 768px) {
         .popup-content {
-          height:39em;
+          height:39rem;
           border-radius:2px;
           position: fixed;
-          top: 51%;
+          top: 52%;
           left:56%;
           transform: translate(-50%, -50%);
           background-color:#F4F9F9;

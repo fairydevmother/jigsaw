@@ -245,7 +245,7 @@ const Post = ({post}) => {
         height:39rem;
         border-radius:2px;
         position: fixed;
-        top: 51%;
+        top: 52%;
         left:56%;
         transform: translate(-50%, -50%);
         background-color:#F4F9F9;

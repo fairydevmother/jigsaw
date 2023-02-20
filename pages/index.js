@@ -94,7 +94,7 @@ export default function Index() {
      
       {data.Posts.map(post =>
     
-      <div key={post.id} className="w-96 rounded-lg flex-shrink-0 flex-grow essayColor">
+      <div key={post.id} className="w-96   rounded-lg flex-shrink-0 flex-grow essayColor">
          
       <section className="text-gray-600 body-font">
                     <div key={post.id} className="container px-5 py-5 mx-auto">
@@ -137,7 +137,12 @@ export default function Index() {
 
 <style>{`
 
-    
+       @media screen and (max-width: 768px) {
+
+        .container{
+          width:95%;
+        }
+       }
 
         .bgColor{
           background-color:#7743DB;
