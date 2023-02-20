@@ -138,12 +138,7 @@ export default function Index() {
 <style>{`
 
        @media screen and (max-width: 768px) {
-        .display{
-          width:97%;
-        }
-        .content{
-          width:97%;
-        }
+       
         .container{
           width:97%;
         }
