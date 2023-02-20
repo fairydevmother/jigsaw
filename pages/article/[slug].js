@@ -157,7 +157,7 @@ export default function Post({post}){
       @media screen and (max-width:768px){
         .container{
           position:absolute;
-          top:70%;
+          top:60%;
           width:55%
           left:12%;
           padding : 0 2rem 0 2rem

@@ -175,7 +175,7 @@ export default function Post(){
     }
     .container{
       position:absolute;
-      top:70%;
+      top:60%;
       width:55%
       left:12%;
       padding : 0 2rem 0 2rem
