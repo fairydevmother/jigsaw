@@ -225,7 +225,7 @@ const FeaturedPost = () => {
           height:39em;
           border-radius:2px;
           position: fixed;
-          top: 56.2%;
+          top: 51%;
           left:56%;
           transform: translate(-50%, -50%);
           background-color:#F4F9F9;
