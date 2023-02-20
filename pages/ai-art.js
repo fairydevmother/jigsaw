@@ -10,7 +10,7 @@ import Sidebar from '../components/sidebar';
 import data from '../data/data.json';
 import Image from 'next/image'
 export default function Index() {
-
+  
   return ( 
      <div>
       <Head>
@@ -44,7 +44,10 @@ export default function Index() {
                       <div className="p-3 bg-white flex items-center mx-auto border-b  border-gray-200 rounded-lg sm:flex-row flex-col">
                       <Link target="_blank" href={art.copyright}>
                       <div className="sm:w-45 sm:h-45   sm:mr-10 inline-flex items-center justify-center flex-shrink-0">
-                          <Image width={333} height={190}
+                          <Image className='img' width={350} height={200}
+                            src={art.imgUrl} alt={art.description}/>
+                             
+                             <Image className='mobileImg' width={300} height={170}
                             src={art.imgUrl} alt={art.description}/>
                             
                       </div>
@@ -72,8 +75,22 @@ export default function Index() {
         .container{
           width:95%;
         }
+        .img{
+          display:none;
+        }
+        
        }
+       @media screen and (min-width: 768px) {
+       
+        .container{
+          width:95%;
+        }
+        
+        .mobileImg{
+          display:none;
+        }
 
+       }
 
         .bgColor{
           background-color:#7743DB;
