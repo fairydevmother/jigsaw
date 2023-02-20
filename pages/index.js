@@ -36,7 +36,7 @@ export default function Index() {
 
     <main className="display font-mono max-w-full h-full flex relative overflow-y-hidden">
 
-      <div className="h-full w-full m-4 flex flex-wrap items-start justify-start rounded-tl grid-flow-col auto-cols-max gap-4 overflow-y-scroll">
+      <div className="content h-full w-full m-4 flex flex-wrap items-start justify-start rounded-tl grid-flow-col auto-cols-max gap-4 overflow-y-scroll overflow-x-hidden">
 
        <div className="font-mono w-full h-95 rounded-lg flex-shrink-0 flex-grow essayColor">
                 <section className="h-85 text-gray-600 body-font">
@@ -138,9 +138,11 @@ export default function Index() {
 <style>{`
 
        @media screen and (max-width: 768px) {
-
+        .display{
+          width:97%;
+        }
         .container{
-          width:95%;
+          width:97%;
         }
        }
 
