@@ -1,4 +1,17 @@
 {
+  "Me":{
+      "name": "text",
+      "profession": "richtext",
+      "imgUrl":"",
+      "email": "text",
+      "birthDate": "text",
+      "description": "richtext",
+      "slug": "text",
+      "resume":"text",
+      "personalSite":"text",
+      "interests":"richtext"
+
+  },
   "Posts": {
     "title": "text",
     "preview": "textarea",
@@ -8,7 +21,7 @@
     "slug":"text",
     "publishedAt":"date"
   },
-  "AI": {
+  "Love": {
     "description": "text",
     "id": "integer",
     "imgUrl":"text",

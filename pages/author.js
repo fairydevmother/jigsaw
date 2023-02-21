@@ -31,33 +31,70 @@ export default function Index() {
   
     <Header />
 
-    <main className="display font-mono max-w-95 h-full flex relative overflow-y-hidden">
+    <main className="display font-mono max-w-full h-full flex relative overflow-y-hidden">
     
-    <div className="h-full w-full max-w-fit m-4 flex flex-wrap items-start overflow-y-scroll overflow-x-hidden justify-start rounded-tl grid-flow-col auto-cols-max gap-4 ">
+    <div className=" h-full w-full flex flex-wrap items-start overflow-y-scroll overflow-x-hidden justify-start  ">
 
-    {data.AI.map(art =>
+    {data.Me.map(mine =>
     
-    <div key={art.id} className=" rounded-lg flex-shrink-0 essayColor ">
+    <div key={mine.id} className=" post font-mono w-full rounded-lg flex-shrink-0 flex-grow essayColor">
       
-    <section className="text-gray-600 body-font container ">
-                  <div key={art.id} className=" px-5 py-5 mx-auto">
-                      <div className="p-3 bg-white flex items-center mx-auto border-b  border-gray-200 rounded-lg sm:flex-row flex-col">
-                      <Link target="_blank" href={art.copyright}>
-                      <div className="sm:w-45 sm:h-45   sm:mr-10 inline-flex items-center justify-center flex-shrink-0">
-                          <Image className='img' width={350} height={200}
-                            src={art.imgUrl} alt={art.description}/>
-                             
-                             <Image className='mobileImg' width={300} height={170}
-                            src={art.imgUrl} alt={art.description}/>
+      <section className="h-full text-gray-600 body-font container ">
+                    <div className=" px-5 py-5 mx-auto">
+                        <div className="p-5 bg-white flex items-center mx-auto border-b  border-gray-200 rounded-lg sm:flex-row flex-col">
+                        <div className="sm:w-46 sm:h-46 h-72 w-72 sm:mr-10 inline-flex items-center justify-center flex-shrink-0">
+                        <Image height={285} width={475} src="/profile.png" alt="cat" />
+                        </div>
+                      
+                        <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                          
+                        <h1 className="font-mono text-black text-4xl title-font font-bold mb-2 hover:text-purple-300">
+                            {mine.name}</h1>
+                            <p className="leading-relaxed text-base"> </p>
                             
-                      </div>
-                        </Link>
-                      </div>
-                  </div>
-      </section>
+                            <div className="md:flex font-bold text-gray-800">
+                              {mine.profession}
+    
+                            </div>
+                              
+     
+                           
+                        </div>
+                        
+
+                        </div>
+                        
+                    </div>
+                    <div className=" px-5 py-5 mx-auto">
+                        <div className="p-5 bg-white flex items-center mx-auto border-b  border-gray-200 rounded-lg sm:flex-row flex-col">
+                        
+                      
+                        <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                          
+                           <h4 className="font-mono text-black text-4xl title-font font-bold mb-2 hover:text-purple-300">This blog is my jigsaw puzzle
+                           </h4>
+                            <p className="leading-relaxed text-base"> </p>
+                            
+                            <div className="md:flex font-bold text-gray-800">
+                                {mine.description}
+    
+                            </div>
+                              
+     
+                           
+                        </div>
+                        
+
+                        </div>
+                        
+                    </div>
+        </section>
 
     </div>
     )}
+
+
+
     
 
  </div>
@@ -74,6 +111,7 @@ export default function Index() {
        
         .container{
           width:95%;
+          height:100%
         }
         .img{
           display:none;
@@ -83,7 +121,8 @@ export default function Index() {
        @media screen and (min-width: 768px) {
        
         .container{
-          width:95%;
+          width:100%;
+          height:100%
         }
         
         .mobileImg{

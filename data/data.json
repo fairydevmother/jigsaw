@@ -6,6 +6,20 @@
     "The playground is run by JSON",
     "It updates in realtime when development mode is on in next.js"
   ],
+  "Me": [
+    {
+      "name": "Sema KARACA",
+      "profession": "Full-Stack Developer | Content Creator",
+      "email": "smkaraca06@gmail.com",
+      "birthDate": "Jan 11, 1999",
+      "description": "Jigsaw Blog. This page is meant to reflect my inner world by sharing some of my puzzle pieces with you.",
+      "slug": "about",
+      "resume":"",
+      "personalSite":"",
+      "interests":"richtext"
+    }
+   
+  ],
   "Posts": [
     {
       "title": "How to Create Your First Next.js Application?",
@@ -36,7 +50,7 @@
       "publishedAt": "13 February 2023"
     }
   ],
-  "AI": [
+  "Love": [
     {
       "description": "AI generated art",
       "id": "2d0eb78c-d671-4ce1-9137-a6879153f084",
@@ -44,21 +58,21 @@
       "copyright":"https://openai.com/dall-e-2/"
     },
     {
-      "description": "AI generated art",
+      "description": "Compassionate Ear Of Van Gogh",
       "id": "2d0eb78c-d671-4ce1-9137-a5879153f084",
-      "imgUrl": "/AI/dall-eTwo.png",
-      "copyright":"https://openai.com/dall-e-2/"
+      "imgUrl": "/AI/vangogh.jpg",
+      "copyright":"/author"
     },
     {
       "description": "AI generated art",
       "id": "2d0eb78c-d671-4ce1-9137-a6379153f084",
-      "imgUrl": "/AI/dall-eThree.png",
+      "imgUrl": "/AI/dall-eNine.png",
       "copyright":"https://openai.com/dall-e-2/"
     },
     {
       "description": "AI generated art",
       "id": "da50bbe8-c4c4-4ac1-bee3-e73a5c28cf05",
-      "imgUrl": "/AI/dall-eFour.png",
+      "imgUrl": "/AI/dall-eSix.png",
       "copyright":"https://openai.com/dall-e-2/"
     },
     {
@@ -70,26 +84,9 @@
     {
       "description": "AI generated art",
       "id": "da50bbe8-c4c4-ddf1-fgd23-e73a5c28cf05",
-      "imgUrl": "/AI/dall-eSix.png",
-      "copyright":"https://openai.com/dall-e-2/"
-    },
-    {
-      "description": "AI generated art",
-      "id": "da50bbe8-c4c4-4af1-fgd23-e73a5c28cf05",
-      "imgUrl": "/AI/dall-eSeven.png",
-      "copyright":"https://openai.com/dall-e-2/"
-    },
-    {
-      "description": "AI generated art",
-      "id": "da50bfg8-c4c4-4af1-fgd23-e73a5c28cf05",
-      "imgUrl": "/AI/dall-eEight.png",
-      "copyright":"https://openai.com/dall-e-2/"
-    },
-    {
-      "description": "AI generated art",
-      "id": "da45bbe8-c4c4-4af1-fgd23-e73a5c28cf05",
-      "imgUrl": "/AI/dall-eNine.png",
+      "imgUrl": "/AI/dall-eThree.png",
       "copyright":"https://openai.com/dall-e-2/"
     }
+  
   ]
 }

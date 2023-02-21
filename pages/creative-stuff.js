@@ -1,125 +1,97 @@
+import Head from 'next/head'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { Checkbox, Form, Input } from 'antd';
 import { Button, Popover } from 'antd';
-
-
+import { useState, useEffect } from 'react';
+import axios from 'axios';
+import Header from '../components/header'
+import Sidebar from '../components/sidebar';
+import data from '../data/data.json';
 import Image from 'next/image'
-const Sidebar = () => {
+export default function Index() {
+  
+  return ( 
+     <div>
+      <Head>
+        <title>Jigsaw | Blog</title>
+        <link rel="icon" href="/puzzle.png" />
+        <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
 
-    const onFinish = (values: any) => {
-        console.log('Success:', values);
-      };
+
+      </Head>
+     
+       
+  <div className="h-screen w-full bg-white relative flex overflow-hidden">
+
+    <Sidebar />
     
-      const onFinishFailed = (errorInfo: any) => {
-        console.log('Failed:', errorInfo);
-      };
-    const text = <span>Sign In</span>;
-  const content = (
-    <div>
-       <Form
-      name="basic"
-      labelCol={{ span: 8 }}
-      wrapperCol={{ span: 16 }}
-      initialValues={{ remember: true }}
-      onFinish={onFinish}
-      onFinishFailed={onFinishFailed}
-      autoComplete="off"
-    >
-      <Form.Item
-        label="Username"
-        name="username"
-        rules={[{ required: true, message: 'Please input your username!' }]}
-      >
-        <Input />
-      </Form.Item>
 
-      <Form.Item
-        label="Password"
-        name="password"
-        rules={[{ required: true, message: 'Please input your password!' }]}
-      >
-        <Input.Password />
-      </Form.Item>
+   <div className="w-full h-full flex flex-col justify-between">
+  
+    <Header />
 
-      <Form.Item name="remember" valuePropName="checked" wrapperCol={{ offset: 8, span: 16 }}>
-        <Checkbox>Remember me</Checkbox>
-      </Form.Item>
+    <main className="display font-mono max-w-95 h-full flex relative overflow-y-hidden">
+    
+    <div className="h-full w-full max-w-fit m-4 flex flex-wrap items-start overflow-y-scroll overflow-x-hidden justify-start rounded-tl grid-flow-col auto-cols-max gap-4 ">
 
-      <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
-        <Button className='custom-button' htmlType="submit">
-          Sign In
-        </Button>
-      </Form.Item>
-    </Form>
+    {data.Love.map(art =>
+    
+    <div key={art.id} className=" rounded-lg flex-shrink-0 essayColor ">
+      
+    <section className="text-gray-600 body-font container ">
+                  <div key={art.id} className=" px-5 py-5 mx-auto">
+                      <div className="p-3 bg-white flex items-center mx-auto border-b  border-gray-200 rounded-lg sm:flex-row flex-col">
+                      <Link target="_blank" href={art.copyright}>
+                      <div className="sm:w-45 sm:h-45   sm:mr-10 inline-flex items-center justify-center flex-shrink-0">
+                          <Image className='img' width={350} height={200}
+                            src={art.imgUrl} alt={art.description}/>
+                             
+                             <Image className='mobileImg' width={300} height={170}
+                            src={art.imgUrl} alt={art.description}/>
+                            
+                      </div>
+                        </Link>
+                      </div>
+                  </div>
+      </section>
+
     </div>
-  );
-  
-  return (
-   <div>
-     <aside className="sidebar h-full  flex flex-col space-y-10 items-center justify-center relative bgColor text-white">
-    {/* <Popover placement="right" title={text} content={content} trigger="click">
-     <div  className="h-10 w-10 flex items-center justify-center rounded-lg cursor-pointer hover:text-gray-800 hover:bg-white  hover:duration-300 hover:ease-linear focus:bg-white">
-       <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" /></svg>
-     </div>
-     
-   </Popover> */}
+    )}
+    
 
-    <div className="h-10  flex items-center justify-center rounded-lg cursor-pointer  hover:bg-purple-400  hover:duration-300 hover:ease-linear">
-        <Link href='/'> <Image width={33} height={33} className="" src="/home.png" alt='home' /> </Link>
-     </div>   
-         
-   
-     <div className="h-10 flex items-center justify-center rounded-lg cursor-pointer  hover:bg-purple-300 hover:duration-300 hover:ease-linear ">
-        <Link href='/creative-stuff'> 
-        <Image width={30} height={30} className="" src="/love.png" alt='home' /> 
-        </Link>
-      </div>
+ </div>
 
-      <div className="h-10  flex items-center justify-center rounded-lg cursor-pointer hover:bg-purple-300  hover:duration-300 hover:ease-linear ">
-           <Link target="_blank" href='https://spotifyanchor-web.app.link/e/C58uOT0plxb'> <Image width={30} height={30} className="fill-black" src="/mic.png" alt='podcast'  /> </Link>
-     </div>
-     
+    
+  </main>
+  
+</div>
+</div>
 
-      <div className="h-10  flex items-center justify-center rounded-lg cursor-pointer hover:bg-purple-300  hover:duration-300 hover:ease-linear ">
-           <Link  href='/author'> <Image width={30} height={30} className="fill-black" src="/pen.png" alt='author'  /> </Link>
-     </div>
 
-     <div className="h-10  flex items-center justify-center rounded-lg cursor-pointer hover:bg-purple-300  hover:duration-300 hover:ease-linear ">
-     <Link href=''> 
-       <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-       </svg>
-       </Link>
-     </div>
-   
-   
-   </aside>
-   
-<style jsx>{`
-  @media (min-width: 320px) and (max-width: 640px) {
-  
-  .sidebar{
-    width:2.5rem;
-  }  
- }
- @media (min-width: 640px) and (max-width: 768px) {
-  
-  .sidebar{
-    width:3.5rem;
-  }  
- }
- @media (min-width: 768px) and (max-width: 1024px) {
-  
-  .sidebar{
-    width:4.3rem;
-  }  
- }
- @media (min-width: 1024px) {
-  
-  .sidebar{
-    width:4.5rem;
-  }  
- }
+<style>{`
+       @media screen and (max-width: 768px) {
+       
+        .container{
+          width:95%;
+        }
+        .img{
+          display:none;
+        }
+        
+       }
+       @media screen and (min-width: 768px) {
+       
+        .container{
+          width:95%;
+        }
+        
+        .mobileImg{
+          display:none;
+        }
+
+       }
+
         .bgColor{
           background-color:#7743DB;
           
@@ -131,10 +103,13 @@ const Sidebar = () => {
         .custom-button{
           background-color:#7743DB;
         }
+        
       `}</style>
-   </div>
 
+
+      
+    </div>
+    
   )
 }
 
-export default Sidebar
