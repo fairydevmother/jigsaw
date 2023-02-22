@@ -20,7 +20,7 @@ export default function Post(){
         <title>Post | Blog</title>
         <link rel="icon" href="/puzzle.png" />
         <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
-
+        
 
       </Head>
      

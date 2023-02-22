@@ -24,7 +24,7 @@ const Post = ({post}) => {
     return (
       <>
         <button onClick={() => setIsOpen(true)}>
-        <h1 className="text-black h-26 text-2xl title-font font-bold mb-2 hover:text-blue-200">
+        <h1 className="text-black dark:text-whiter h-26 text-2xl title-font font-bold mb-2 hover:text-blue-200">
          {post.title}
         </h1>
         </button>

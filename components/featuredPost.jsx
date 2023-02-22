@@ -23,7 +23,7 @@ const FeaturedPost = () => {
     return (
       <>
         <button onClick={() => setIsOpen(true)}>
-        <h1 className="font-mono text-black text-4xl title-font font-bold mb-2 hover:text-purple-300">The Pandemic Developer</h1>
+        <h1 className="dark:text-whiter font-mono text-black text-4xl title-font font-bold mb-2 hover:text-purple-300">The Pandemic Developer</h1>
         </button>
         {isOpen && (
 
