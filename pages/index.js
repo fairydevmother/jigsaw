@@ -75,7 +75,7 @@ export default function Index() {
                             </div>
                               
                            
-                             <Link href="/featured-post/"  className="hover:text-blue-800 mt-3 text-indigo-500 inline-flex items-center">
+                             <Link href="/featured-post/"  className="hover:text-blue-800 mt-3 text-blue-500 inline-flex items-center">
                                 Read More
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                                 <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -129,7 +129,7 @@ export default function Index() {
                             </div>
                               
                            
-                             <Link href="/featured-post/"  className="hover:text-blue-800 mt-3 text-indigo-500 inline-flex items-center">
+                             <Link href="/featured-post/"  className="hover:text-blue-800 mt-3 text-blue-500 inline-flex items-center">
                                 Read More
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                                 <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -164,7 +164,7 @@ export default function Index() {
 
                           <p className="leading-relaxed text-base">{post.description} </p>
                          
-                          <Link className="mt-3 text-indigo-500 inline-flex items-center hover:text-blue-800" href={`/article/${post.slug}`}>
+                          <Link className="mt-3 text-blue-500 inline-flex items-center hover:text-blue-800" href={`/article/${post.slug}`}>
                         Read More
                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                               <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -206,7 +206,7 @@ export default function Index() {
 
                           <p className=" content leading-relaxed text-base">{post.description} </p>
                          
-                          <Link className="mt-3 text-indigo-500 inline-flex items-center hover:text-blue-800" href={`/article/${post.slug}`}>
+                          <Link className="mt-3 text-blue-500 inline-flex items-center hover:text-blue-800" href={`/article/${post.slug}`}>
                         Read More
                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                               <path d="M5 12h14M12 5l7 7-7 7"></path>

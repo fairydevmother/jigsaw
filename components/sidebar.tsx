@@ -5,7 +5,6 @@ import { useTheme } from "next-themes";
 import { useState, useEffect } from 'react';
 import DarkModeButton from '@/components/darkMode';
 import Image from 'next/image'
-
 const Sidebar = () => {
 
 
