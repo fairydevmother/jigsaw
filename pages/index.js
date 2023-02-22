@@ -52,7 +52,7 @@ export default function Index() {
                             
                             </Link>
                             
-                            <p className="leading-relaxed text-base">Story of me getting into tech and programming. </p>
+                            <p className="leading-relaxed text-base  dark:text-lessWhite">Story of me getting into tech and programming. </p>
                             
                             <div className="dark:text-whiter md:flex font-bold text-gray-800">
                                 <div className="w-full md:w-1/2 flex space-x-3">
@@ -98,7 +98,7 @@ export default function Index() {
                         <Image height={300} width={500} src="/cat.webp" alt="cat" />
                         </div>
                       
-                        <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                        <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0 ">
                   
                             <Link href="/featured-post/" className="font-mono  dark:text-whiter text-black text-4xl title-font font-bold mb-2 hover:text-purple-300 mt-3 inline-flex items-center">
                                Pandemic Developer
@@ -106,7 +106,7 @@ export default function Index() {
                                                  
   
 
-                            <p className="leading-relaxed text-base">Story of me getting into tech and programming. </p>
+                            <p className="leading-relaxed text-base dark:text-lessWhite">Story of me getting into tech and programming. </p>
                             
                             <div className="dark:text-whiter md:flex font-bold text-gray-800">
                                 <div className="w-full md:w-1/2 flex space-x-3">

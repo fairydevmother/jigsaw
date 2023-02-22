@@ -13,7 +13,7 @@ const darkModeButton = () => {
         <svg
           onClick={() => setTheme("light")}
           xmlns="http://www.w3.org/2000/svg"
-          className="h-9 w-9 text-blue-200"
+          className="h-9 w-9 text-yellow-50"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"

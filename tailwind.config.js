@@ -17,8 +17,9 @@ module.exports = {
         'dev':'#565656',
         'whiter':'#f8fafc',
         'lessGray':'#cbd5e1',
-        'body':'#e1e1e1'
-        
+        'body':'#e1e1e1',
+        'lessWhite':'#BEAEE2',
+        'greener':'#79B4B7'
       },
     
    },

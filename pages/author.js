@@ -52,8 +52,30 @@ export default function Index() {
                             {mine.name}</h1>
                             <p className="leading-relaxed text-base"> </p>
                             
-                            <div className="dark:text-lessGray  md:flex font-bold text-gray-800">
+                            <div className="text-gray-600 dark:text-lessWhite  md:flex font-bold">
                               {mine.profession}
+    
+                            </div>
+                              
+     
+                           
+                        </div>
+                       
+
+                        </div>
+                        
+                    </div>
+                    <div className=" px-5 py-5 mx-auto">
+                        <div className=" dark:bg-dev p-5 bg-white flex items-center mx-auto border-b  border-gray-200 rounded-lg sm:flex-row flex-col">
+                        
+                      
+                        <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                          
+                           <h4 className="font-mono   dark:text-whiter text-black text-2xl title-font font-bold mb-2 hover:text-purple-300">This blog is my jigsaw puzzle
+                           </h4>
+                            
+                            <div className="md:flex  dark:text-lessWhite font-bold text-gray-600">
+                                {mine.description}
     
                             </div>
                               
@@ -69,14 +91,16 @@ export default function Index() {
                         <div className=" dark:bg-dev p-5 bg-white flex items-center mx-auto border-b  border-gray-200 rounded-lg sm:flex-row flex-col">
                         
                       
-                        <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-                          
-                           <h4 className="font-mono  dark:text-whiter text-black text-2xl title-font font-bold mb-2 hover:text-purple-300">This blog is my jigsaw puzzle
-                           </h4>
+                        <div className="flex-grow sm:text-left w-50 text-center mt-6 sm:mt-0">
+                        <h1 className="font-mono text-black text-2xl title-font  dark:text-whiter font-bold mb-2 hover:text-purple-300">
+                            Quote Of The Day</h1>
+
+                        <h1 className="font-mono text-gray-600 text-xl title-font  dark:text-whiter font-bold mb-2 ">
+                            {data.Quote}</h1>
                             <p className="leading-relaxed text-base"> </p>
                             
-                            <div className="md:flex dark:text-lessGray font-bold text-gray-800">
-                                {mine.description}
+                            <div className=" md:flex font-bold text-gray-800 dark:text-greener">
+                              {data.Author}
     
                             </div>
                               

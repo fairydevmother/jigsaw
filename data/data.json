@@ -1,11 +1,13 @@
 {
-  "Title": "New Title",
-  "Desc": "This is the description of the playground page. Yeah I know, it's absolutely ugly and I'm way too lazy to update it.",
+  "Title": "Jigsaw ",
+  "Desc": "This is the Jigsaw Blog Page created by Sema KARACA.",
   "Features": [
     "The playground is fun and easy to mess with",
     "The playground is run by JSON",
     "It updates in realtime when development mode is on in next.js"
   ],
+  "Quote": "A mind needs books as a sword need a whestone, if it is to keep its edge.",
+  "Author": "George R.R Martin",
   "Me": [
     {
       "name": "Sema KARACA",
@@ -14,11 +16,10 @@
       "birthDate": "Jan 11, 1999",
       "description": "Jigsaw Blog. This page is meant to reflect my inner world by sharing some of my puzzle pieces with you.",
       "slug": "about",
-      "resume":"",
-      "personalSite":"",
-      "interests":"richtext"
+      "resume": "",
+      "personalSite": "",
+      "interests": "richtext"
     }
-   
   ],
   "Posts": [
     {
@@ -32,13 +33,14 @@
       "publishedAt": "Feb 13,2023"
     },
     {
-      "title": "Blog Post",
-      "preview": "This is entry to text",
-      "body": "This is another blog post on the playground page.",
+      "title": "How to 'Mind Map'?",
+      "description": "How do I use mind maps as a programmer",
+      "preview":"Brain is somewhat hard to comprehend. But we all know about memory. Memory is where we acquire, store and retrieve knowledge. And mind maps can help this process.",
+      "body": "What is memory? \n Before we get into mind maps we need to understand how memory and memorising or learning works. Usually memory split into two categories implicit and explicit. \n 1) Implicit memory: Implicit memories form unconsciosly. It is mostly effective when we are learning motor skills like walking or riding a bike. \n Explicit memory: You can say we are in charge of explicit memory. As it comes to explicit long-term memory we pick the things goes in there like a loved one’s birthday or passwords. \n How do we learn? \n There are stages between learning and making it a memory. There is a learning method called memorising by association that super-learners use. A lof of the knowledge we are trying to acquire is related to the ones we are already have even in the most loose and tenuous way. \n  Back in high school we did this thing where we put a foreign word into a sentence instead of the one we use in our language. I didn’t realise we are memorising them by assosiation. \n Let me give you an example. Let’s say we are trying to learn French. And we just learned the word Bougie which means candle in French. \n We can put it in a sentence like “We lit the bougies because the lights went out” and now our minds can associate the word bougie with candle. \n We can memorise everything by just associating with things we already know. \n Association can be made in different ways. We can make it into a mind map and put related words or ideas. \n  Mind Maps \n You remember those scribbles we did when in class and you remember which class you did it in. If yes, then you can understand how we associate things. You can associate your drawing of a man in pain with being in Math class. And that is how mind maps works, too. \n Let me Illustrate: \n  If I want to learn the word 'Bougie'. I need some words for association. And in this example of a mind map of the word Bugie I put Lumiere in the center since already know him and I thought Bougie is written kinda like Boogie hence my first thought was the Boogie man and Boogie man comes at night and it gets spooky so we need to turn the lights on hence the candles. \n   This is a simple mind-map with only one branch. You can add multiple branches. Let your mind wander. Normally, bougie is the center of the mind-map which is the theme. And the branches represents the new ideas. And you should use images to associate with your ideas. Be as visual as possible. \n Mind Mapping as a Programmer \n  People usually use mind maps for coming up with new ideas, coming up with solutions for a problem, taking notes etc. As you can see you can use mind maps for basically anything. I started mind mapping method for learning new things and planning my career. Now I use it for programming, too. \n Let’s say I am starting a new website project but I need a draft first. Before I start to draw the design I need to know where all things are gonna go so I create a mind map with multiple branches. \n  Then I carve out the details for the website I can create a sketch then start to build. \n These types of mind maps can also come in handy when you come across a bug issue and trying to find solutions. You can put the problem in the center and brainstorm the solutions. It can help you see the issue in a whole different light. \n",
       "id": "599695d0-bab8-463a-a381-3191cd0182ab",
       "imgUrl": "/cat.webp",
       "slug": "Test",
-      "publishedAt": "Feb 13,2023"
+      "publishedAt": "July 18,2022"
     },
     {
       "title": "Next Blog",
@@ -55,38 +57,37 @@
       "description": "AI generated art",
       "id": "2d0eb78c-d671-4ce1-9137-a6879153f084",
       "imgUrl": "/AI/dall-e.png",
-      "copyright":"https://openai.com/dall-e-2/"
+      "copyright": "https://openai.com/dall-e-2/"
     },
     {
       "description": "Compassionate Ear Of Van Gogh",
       "id": "2d0eb78c-d671-4ce1-9137-a5879153f084",
       "imgUrl": "/AI/vangogh.jpg",
-      "copyright":"/author"
+      "copyright": "/author"
     },
     {
       "description": "AI generated art",
       "id": "2d0eb78c-d671-4ce1-9137-a6379153f084",
       "imgUrl": "/AI/dall-eNine.png",
-      "copyright":"https://openai.com/dall-e-2/"
+      "copyright": "https://openai.com/dall-e-2/"
     },
     {
       "description": "AI generated art",
       "id": "da50bbe8-c4c4-4ac1-bee3-e73a5c28cf05",
       "imgUrl": "/AI/dall-eSix.png",
-      "copyright":"https://openai.com/dall-e-2/"
+      "copyright": "https://openai.com/dall-e-2/"
     },
     {
       "description": "AI generated art",
       "id": "da50bbe8-c4c4-4ac1-fgd23-e73a5c28cf05",
       "imgUrl": "/AI/dall-eFive.png",
-      "copyright":"https://openai.com/dall-e-2/"
+      "copyright": "https://openai.com/dall-e-2/"
     },
     {
       "description": "AI generated art",
       "id": "da50bbe8-c4c4-ddf1-fgd23-e73a5c28cf05",
       "imgUrl": "/AI/dall-eThree.png",
-      "copyright":"https://openai.com/dall-e-2/"
+      "copyright": "https://openai.com/dall-e-2/"
     }
-  
   ]
 }
