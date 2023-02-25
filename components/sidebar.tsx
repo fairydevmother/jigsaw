@@ -68,8 +68,7 @@ const Sidebar = () => {
 
     <div className="h-10 dark:text-gray-300 flex items-center justify-center rounded-lg cursor-pointer hover:bg-purple-700  hover:duration-300 hover:ease-linear">
         <Link href='/'> <Image width={33} height={33} className="" src="/home.png" alt='home' /> </Link>
-     </div>   
-         
+     </div>       
    
      <div className="h-10 flex items-center justify-center rounded-lg cursor-pointer  hover:bg-purple-700 hover:duration-300 hover:ease-linear ">
         <Link href='/creative-stuff'> 
@@ -77,14 +76,20 @@ const Sidebar = () => {
         </Link>
       </div>
 
-      <div className="h-10  flex  items-center justify-center rounded-lg cursor-pointer hover:bg-purple-700  hover:duration-300 hover:ease-linear ">
-           <Link target="_blank" href='https://spotifyanchor-web.app.link/e/C58uOT0plxb'> <Image width={30} height={30} className="fill-black" src="/mic.png" alt='podcast'  /> </Link>
+      <div className="h-10  flex items-center justify-center rounded-lg cursor-pointer hover:bg-purple-700  hover:duration-300 hover:ease-linear ">
+           <Link target="_blank" href='https://www.twitch.tv/rainundertheplane'> 
+           <Image width={30} height={30} className="fill-black" src="/live.png" alt='live-stream'  /> </Link>
      </div>
-     
 
+      <div className="h-10  flex  items-center justify-center rounded-lg cursor-pointer hover:bg-purple-700  hover:duration-300 hover:ease-linear ">
+           <Link target="_blank" href='https://spotifyanchor-web.app.link/e/C58uOT0plxb'> 
+           <Image width={29} height={29} className="fill-black" src="/mic.png" alt='podcast'  /> </Link>
+     </div>
+  
       <div className="h-10  flex items-center justify-center rounded-lg cursor-pointer hover:bg-purple-700  hover:duration-300 hover:ease-linear ">
            <Link  href='/author'> <Image width={30} height={30} className="fill-black" src="/pen.png" alt='author'  /> </Link>
      </div>
+       
 
      <div className="h-10  flex items-center justify-center rounded-lg cursor-pointer hover:bg-purple-700  hover:duration-300 hover:ease-linear ">
      

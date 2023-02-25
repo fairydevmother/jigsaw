@@ -41,15 +41,6 @@
       "imgUrl": "/cat.webp",
       "slug": "Test",
       "publishedAt": "July 18,2022"
-    },
-    {
-      "title": "Next Blog",
-      "preview": "This is entry to text",
-      "body": "Hello",
-      "id": "1988ac88-d8cc-477b-aa00-bf177d76d4e8",
-      "imgUrl": "/cat.webp",
-      "slug": "Test",
-      "publishedAt": "13 February 2023"
     }
   ],
   "Love": [
@@ -63,6 +54,12 @@
       "description": "Compassionate Ear Of Van Gogh",
       "id": "2d0eb78c-d671-4ce1-9137-a5879153f084",
       "imgUrl": "/AI/vangogh.jpg",
+      "copyright": "/author"
+    },
+    {
+      "description": "My Paintings",
+      "id": "2d0fgh8c-d671-4ce1-9137-a6379153f084",
+      "imgUrl": "/AI/paintings.png",
       "copyright": "/author"
     },
     {
