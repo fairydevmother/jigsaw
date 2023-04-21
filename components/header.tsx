@@ -12,7 +12,7 @@ const Header = () => {
      
      <div className="flex flex-col items-end ">
      
-       <div className="text-md font-medium ">Sema KARACA</div>
+       <div className="text-md font-medium ">Sam</div>
      
        <div className="text-sm font-regular">Full Stack Developer</div>
      </div>
