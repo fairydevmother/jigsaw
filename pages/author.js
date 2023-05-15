@@ -16,7 +16,8 @@ export default function Index() {
     const fetchQuote = async () => {
       try {
         const response = await fetch('https://type.fit/api/quotes'); 
-        var randomNumber = Math.floor(Math.random()* 1007)
+        
+        var randomNumber = Math.floor(Math.random()*4400 )
       
         const data = await response.json();
         const quoteOfTheDay = data[randomNumber];
@@ -116,8 +117,8 @@ export default function Index() {
                         <h1 className="font-mono text-gray-600 text-xl title-font  dark:text-whiter font-bold mb-2 "> 
                         {quote.text}
                         </h1> 
-                        <div className=" md:flex font-bold text-gray-800 dark:text-greener"> 
-                        {data.Author} 
+                        <div className=" md:flex text-lg font-bold text-gray-800 dark:text-greener"> 
+                        {quote.author} 
                         </div> 
                         </div> 
                         ) : ( <p>Loading...</p> )} 
