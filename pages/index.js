@@ -75,14 +75,15 @@ export default function Index() {
                             </div>
                               
                            
-                             <Link href="/featured-post/"  className="hover:text-blue-800 mt-3 text-blue-500 inline-flex items-center">
-                                Read More
+                             <Link href="https://fairydevmother.substack.com/p/pandemic-developer?utm_source=profile&utm_medium=reader2"  className="hover:text-blue-800 mt-3 text-blue-500 inline-flex items-center">
+                                Read More In Substack
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                                 <path d="M5 12h14M12 5l7 7-7 7"></path>
-                            </svg> </Link>
+                            </svg> 
+                            </Link>
  
                            
-                        </div>
+                            </div>
                         </div>
                     </div>
                     
@@ -100,7 +101,7 @@ export default function Index() {
                       
                         <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0 ">
                   
-                            <Link href="/featured-post/" className="font-mono  dark:text-whiter text-black text-4xl title-font font-bold mb-2 hover:text-purple-300 mt-3 inline-flex items-center">
+                            <Link href="https://fairydevmother.substack.com/p/pandemic-developer?utm_source=profile&utm_medium=reader2" className="font-mono  dark:text-whiter text-black text-4xl title-font font-bold mb-2 hover:text-purple-300 mt-3 inline-flex items-center">
                                Pandemic Developer
                              </Link>
                                                  
@@ -129,7 +130,7 @@ export default function Index() {
                             </div>
                               
                            
-                             <Link href="/featured-post/"  className="hover:text-blue-800 mt-3 text-blue-500 inline-flex items-center">
+                             <Link href="https://fairydevmother.substack.com/p/pandemic-developer?utm_source=profile&utm_medium=reader2"  className="hover:text-blue-800 mt-3 text-blue-500 inline-flex items-center">
                                 Read More
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                                 <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -164,18 +165,17 @@ export default function Index() {
 
                           <p className="leading-relaxed text-base">{post.description} </p>
                          
-                          <Link className="mt-3 text-blue-500 inline-flex items-center hover:text-blue-800" href={`/article/${post.slug}`}>
-                        Read More
+                      <Link className="mt-3 text-blue-500 inline-flex items-center hover:text-blue-800" href={post.slug}>
+                        Read More In Substack
                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                               <path d="M5 12h14M12 5l7 7-7 7"></path>
-                          </svg>
-                       </Link>
+                        </svg>
+                      </Link>
 
-                      
                       </div>
                       </div>
                   </div>
-              </section>
+      </section>
 
     </div>
     )}
@@ -197,7 +197,7 @@ export default function Index() {
                       <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
                       
                        
-                      <Link className="font-mono text-black  dark:text-whiter text-2xl title-font font-bold mb-2 hover:text-blue-300" href={`/article/${post.slug}`}>
+                      <Link className="font-mono text-black  dark:text-whiter text-2xl title-font font-bold mb-2 hover:text-blue-300" href={post.slug}>
                        {post.title}
                         
                        </Link>
@@ -206,8 +206,8 @@ export default function Index() {
 
                           <p className=" content leading-relaxed text-base">{post.description} </p>
                          
-                          <Link className="mt-3 text-blue-500 inline-flex items-center hover:text-blue-800" href={`/article/${post.slug}`}>
-                        Read More
+                          <Link className="mt-3 text-blue-500 inline-flex items-center hover:text-blue-800" href={post.slug}>
+                          Read More In Substack
                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                               <path d="M5 12h14M12 5l7 7-7 7"></path>
                           </svg>

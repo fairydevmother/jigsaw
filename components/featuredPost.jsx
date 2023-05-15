@@ -65,12 +65,12 @@ const FeaturedPost = () => {
                      ))}
 
 
-             <Link className="mt-3 text-blue-500 inline-flex items-center hover:text-blue-800"  href="/featured-post" >
+             <Link className="mt-3 text-blue-500 inline-flex items-center hover:text-blue-800" target="_blank" href="https://fairydevmother.substack.com/p/pandemic-developer?utm_source=profile&utm_medium=reader2" >
                           Read More
                           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                                 <path d="M5 12h14M12 5l7 7-7 7"></path>
                             </svg>
-                         </Link>
+             </Link>
               <div className='text-center'>
               <span className="inline-block h-1 w-10 rounded bg-pink-500 mt-8 mb-6"></span>
               <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm">S. KARACA</h2>
