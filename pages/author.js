@@ -17,7 +17,7 @@ export default function Index() {
       try {
         const response = await fetch('https://type.fit/api/quotes'); 
         
-        var randomNumber = Math.floor(Math.random()*4000 )
+        var randomNumber = Math.floor(Math.random()*400 )
       
         const data = await response.json();
         const quoteOfTheDay = data[randomNumber];
