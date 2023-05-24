@@ -18,9 +18,9 @@ const Header = () => {
      </div>
 
      <div className="h-10 w-10 rounded-full cursor-pointer bg-gray-200 border-2 border-blue-400">
-     
+     <Link href="https://fairydevmother.github.io/portfolio/" target="_blank"> 
       <Image src='/profile.png' width={40} height={40} alt="profile" />
- 
+     </Link>
      </div>
       
    </div>
