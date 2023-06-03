@@ -33,6 +33,16 @@
       "publishedAt": "Feb 13,2023"
     },
     {
+      "title": "Poison In The Pendant",
+      "description": "A short story",
+      "preview":"One day a king falls out of love with her queen because she was always in a bad mood and always getting sick. So he goes to a warlock to buy a spell or a potion to kill her so he wouldn't bother him anymore",
+      "body": "Instead of a spell or a potion warlock gaves him a pendant saying it is poisoned and it only works if she wears it all the time. King takes the pendant to her queen and to make sure she wears it all the time king has to be with her all day, all night. He keeps watching her and making sure it works he keeps asking how are you feeling to her. Queen is unaware of what his agenda is keeps getting healthier and happier because she gets to have time with him. And seeing her this lively king starts falling in love with her again. So he goes back to the warlock and ask him is there any antidote for the poison in the pendant so it would not kill her. Warlock said to the king I have never put poison in that pendant, the poison was in your mind my king. I believe the queen was unhappy because he could not see you and spend more time with you. That is why I gave you chance to heal her even at the expense of you beheading my head.",
+       "id": "599695d0-bab8-463a-a381-3191cDK582yb",
+      "imgUrl": "/pendant.png",
+      "slug": "https://technogoddesschronicles.substack.com/p/poison-in-the-pendant",
+      "publishedAt": "July 11,2022"
+    },
+    {
       "title": "NPM Commands For Efficiency",
       "description": "Npm commands you did not know you need.",
       "preview":"As developers we use Node Package Manager an awful lot. We also need a bunch of commands to use npm. And to work more efficiently we do need to know some key commands. Here are five commands to use for efficiency.",
@@ -82,6 +92,7 @@
       "slug": "https://fairydevmother.substack.com/p/the-raw-power-of-command-line",
       "publishedAt": "July 11,2022"
     }
+   
   ],
   "Love": [
     {
