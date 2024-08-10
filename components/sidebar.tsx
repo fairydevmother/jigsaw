@@ -30,7 +30,7 @@ const Sidebar = () => {
       </div>
 
       <div className="h-10  flex items-center justify-center rounded-lg cursor-pointer hover:bg-purple-700  hover:duration-300 hover:ease-linear ">
-           <Link target="_blank" href='https://www.twitch.tv/rainundertheplane'> 
+           <Link target="_blank" href='https://www.twitch.tv/soradearu'> 
            <Image width={30} height={30} className="fill-black" src="/live.png" alt='live-stream'  /> </Link>
      </div>
 

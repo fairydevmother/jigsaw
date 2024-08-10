@@ -14,7 +14,7 @@ const Header = () => {
      
        <div className="text-md font-medium ">Sam</div>
      
-       <div className="text-sm font-regular">Full Stack Developer</div>
+       <div className="text-sm font-regular">Full Stack Web Developer</div>
      </div>
 
      <div className="h-10 w-10 rounded-full cursor-pointer bg-gray-200 border-2 border-blue-400">
